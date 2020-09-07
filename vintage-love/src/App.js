@@ -1,7 +1,8 @@
 import React, { Component, Fragment } from "react";
 import "./App.scss";
-import lady from "./assets/lady.jpg";
+import pinup from "./assets/lady.jpg";
 import logo from "./assets/logo.jpg";
+import pinupRecline from "./assets/ladyRecline.jpg";
 
 class Header extends Component {
   render() {
@@ -15,41 +16,53 @@ class Header extends Component {
   }
 }
 
+class Hamburger extends Component {
+  render() {
+    return (
+      <button type="button">
+        <ul className="navbar__burger">
+          <li class="navbar__line"></li>
+          <li class="navbar__line"></li>
+          <li class="navbar__line"></li>
+        </ul>
+      </button>
+    );
+  }
+}
+
 class Navbar extends Component {
   render() {
     return (
       <nav className="navbar">
         <div className="navbar__wrapper">
-          <div className="navbar__vlInfo">
-            <h1>Vintagelove</h1>
+          <div className="navbar__container">
+            <div className="navbar__vlInfo">
+              <h1>Vintagelove</h1>
+            </div>
+            <Hamburger />
+            <ul className="navbar__nav">
+              <li>
+                <p>
+                  <a href="#who">Who</a>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a href="#what">What</a>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a href="#where">Where</a>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a href="#contact">Contact</a>
+                </p>
+              </li>
+            </ul>
           </div>
-          <ul className="navbar__burger">
-            <li class="navbar__line1"></li>
-            <li class="navbar__line2"></li>
-            <li class="navbar__line3"></li>
-          </ul>
-          <ul className="navbar__nav">
-            <li>
-              <p>
-                <a href="#who">Who</a>
-              </p>
-            </li>
-            <li>
-              <p>
-                <a href="#what">What</a>
-              </p>
-            </li>
-            <li>
-              <p>
-                <a href="#where">Where</a>
-              </p>
-            </li>
-            <li>
-              <p>
-                <a href="#contact">Contact</a>
-              </p>
-            </li>
-          </ul>
         </div>
       </nav>
     );
@@ -62,7 +75,7 @@ class Welcome extends Component {
       <section className="welome">
         <h2>Who</h2>
         <div className="welcome__imageContainer">
-          <img src="" alt="Pin-up girl" />
+          <img src={pinupRecline} alt="Pin-up girl" />
         </div>
       </section>
     );
@@ -129,6 +142,7 @@ class Purchase extends Component {
             <p>Etsy</p>
           </a>
         </div>
+        <Stores />
       </section>
     );
   }
@@ -177,6 +191,10 @@ class Footer extends Component {
 }
 
 class App extends Component {
+  clickHandler() {
+    console.log("hello");
+  }
+
   render() {
     return (
       <Fragment>

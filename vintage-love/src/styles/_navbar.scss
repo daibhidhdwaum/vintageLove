@@ -1,3 +1,64 @@
+.navbar,
+.navbar__container,
+.navbar__nav {
+  display: flex;
+}
+
 .navbar {
   background-color: $primary;
+  font-size: 2rem;
+  &__wrapper {
+    max-width: 1100px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  h1 {
+    @include text($titles, 2rem);
+  }
+  &__line {
+    width: 3rem;
+    height: 0.3rem;
+    background-color: $dark;
+    margin: 0.5rem 0;
+    border-radius: 1.5rem;
+  }
+  &__container {
+    height: 8vh;
+    justify-content: space-between;
+  }
+  button {
+    border: none;
+    background-color: transparent;
+  }
+  &__burger {
+    border: 1px solid $dark;
+    padding: 0.8rem;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__nav,
+  &__nav li a,
+  &__container {
+    align-items: center;
+  }
+  &__nav {
+    background-color: $light;
+    width: 100%;
+    position: absolute;
+    top: 21.7vh;
+    left: 0;
+    flex-direction: column;
+    transform: translateX(100%);
+  }
+  &__nav li {
+    width: 100%;
+  }
+  &__nav li a {
+    display: inline-flex;
+    justify-content: center;
+    height: 4rem;
+    width: 100%;
+    color: $dark;
+  }
 }

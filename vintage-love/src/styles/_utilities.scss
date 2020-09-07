@@ -5,3 +5,11 @@ $quarternary: #51ead5;
 $quiternary: #196f0c;
 $dark: #27262c;
 $light: #fdfffc;
+
+$titles: "Fontdiner Swanky", cursive;
+$bodyText: "Raleway", sans-serif;
+
+@mixin text($font, $size) {
+  font-family: $font;
+  font-size: $size;
+}
