@@ -84,18 +84,17 @@ class Welcome extends Component {
 }
 
 const Card = (props) => {
+  console.log(props.src);
   const product = props.image.map((prod) => {
     return (
       <div className="card" key={prod.id}>
         <div className="card__imageContainer">
           <img src={prod.src} alt={prod.title} />
-          <div className="galleryHover">
-            <div className="imageInfoContainer">
-              <div className="imageInfo">
-                <h3>{prod.title}</h3>
-                <p>{prod.description}</p>
-                <p>{prod.price}</p>
-              </div>
+        </div>
+        <div className="card__hover">
+          <div className="card__infoContainer">
+            <div className="card__info">
+              <h3 className="card__title">{prod.title}</h3>
             </div>
           </div>
         </div>
@@ -113,84 +112,84 @@ class Gallery extends Component {
         id: 1,
         title: "bike",
         price: 50,
-        src: { bike },
+        src: "./images/bike.jpg",
         description: "Biodiesel truffaut hell of XOXO readymade bicycle rights",
       },
       {
         id: 2,
         title: "bike",
         price: 50,
-        src: { bike },
+        src: "./images/bike.jpg",
         description: "Biodiesel truffaut hell of XOXO readymade bicycle rights",
       },
       {
         id: 3,
         title: "bike",
         price: 50,
-        src: { bike },
+        src: "images/bike.jpg",
         description: "Biodiesel truffaut hell of XOXO readymade bicycle rights",
       },
       {
         id: 4,
         title: "bike",
         price: 50,
-        src: { bike },
+        src: "images/bike.jpg",
         description: "Biodiesel truffaut hell of XOXO readymade bicycle rights",
       },
       {
         id: 5,
         title: "bike",
         price: 50,
-        src: { bike },
+        src: "images/bike.jpg",
         description: "Biodiesel truffaut hell of XOXO readymade bicycle rights",
       },
       {
         id: 6,
         title: "bike",
         price: 50,
-        src: { bike },
+        src: "images/bike.jpg",
         description: "Biodiesel truffaut hell of XOXO readymade bicycle rights",
       },
       {
         id: 7,
         title: "bike",
         price: 50,
-        src: { bike },
+        src: "images/bike.jpg",
         description: "Biodiesel truffaut hell of XOXO readymade bicycle rights",
       },
       {
         id: 8,
         title: "bike",
         price: 50,
-        src: { bike },
+        src: "images/bike.jpg",
         description: "Biodiesel truffaut hell of XOXO readymade bicycle rights",
       },
       {
         id: 9,
         title: "bike",
         price: 50,
-        src: { bike },
+        src: "images/bike.jpg",
         description: "Biodiesel truffaut hell of XOXO readymade bicycle rights",
       },
       {
         id: 10,
         title: "bike",
         price: 50,
-        src: { bike },
+        src: "images/bike.jpg",
         description: "Biodiesel truffaut hell of XOXO readymade bicycle rights",
       },
       {
         id: 11,
         title: "bike",
         price: 50,
-        src: { bike },
+        src: "images/bike.jpg",
         description: "Biodiesel truffaut hell of XOXO readymade bicycle rights",
       },
       {
         id: 12,
         title: "bike",
         price: 50,
-        src: { bike },
+        src: "images/bike.jpg",
         description: "Biodiesel truffaut hell of XOXO readymade bicycle rights",
       },
     ],
