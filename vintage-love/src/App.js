@@ -3,6 +3,7 @@ import "./App.scss";
 import pinup from "./assets/lady.jpg";
 import logo from "./assets/logo.jpg";
 import pinupRecline from "./assets/ladyRecline.jpg";
+import bike from "./assets/products/bike.jpg";
 
 class Header extends Component {
   render() {
@@ -82,28 +83,48 @@ class Welcome extends Component {
   }
 }
 
-class Card extends Component {
-  render() {
-    return (
-      <div className="card">
-        <div className="card__imageContainer">
-          <img src="" alt="switchplate" />
-          <div class="galleryHover">
-            <div class="imageInfoContainer">
-              <div class="imageInfo">
-                <h3>switchplate name</h3>
-                <p>switchplate description</p>
-              </div>
+const Card = (props) => {
+  console.log(props);
+  return (
+    <div className="card">
+      <div className="card__imageContainer">
+        <img src="" alt="switchplate" />
+        <div class="galleryHover">
+          <div class="imageInfoContainer">
+            <div class="imageInfo">
+              <h3>switchplate name</h3>
+              <p>switchplate description</p>
             </div>
           </div>
         </div>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 class Gallery extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      images: [
+        { title: "bike", price: 50, src: { bike } },
+        { title: "bike", price: 50, src: { bike } },
+        { title: "bike", price: 50, src: { bike } },
+        { title: "bike", price: 50, src: { bike } },
+        { title: "bike", price: 50, src: { bike } },
+        { title: "bike", price: 50, src: { bike } },
+        { title: "bike", price: 50, src: { bike } },
+        { title: "bike", price: 50, src: { bike } },
+        { title: "bike", price: 50, src: { bike } },
+        { title: "bike", price: 50, src: { bike } },
+        { title: "bike", price: 50, src: { bike } },
+        { title: "bike", price: 50, src: { bike } },
+      ],
+    };
+  }
+
   render() {
+    console.log(this.state);
     return (
       <section className="gallery">
         <h2>Products</h2>
@@ -179,11 +200,33 @@ class Footer extends Component {
   render() {
     return (
       <footer className="footer">
-        <div className="footer__ownership">
-          <p className="footer__copy">copyright &copy; Adrianne Kulling 2020</p>
-          <p className="footer__built">
-            Site build by <a href="http://davidjdownie.ca/">David Downie</a>
-          </p>
+        <div className="footer__wrapper">
+          <ul className="footer__social">
+            <li>
+              <a href="https://www.etsy.com/ca/shop/vintagelovely">
+                <i class="fab fa-etsy"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/vintagelove.ca/?__xts__[%2Ffacebook]">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/vintagelove.ca/?hl=en">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+          <hr />
+          <div className="footer__ownership">
+            <p className="footer__copy">
+              copyright &copy; Adrianne Kulling 2020
+            </p>
+            <p className="footer__built">
+              Site build by <a href="http://davidjdownie.ca/">David Downie</a>
+            </p>
+          </div>
         </div>
       </footer>
     );
@@ -191,10 +234,6 @@ class Footer extends Component {
 }
 
 class App extends Component {
-  clickHandler() {
-    console.log("hello");
-  }
-
   render() {
     return (
       <Fragment>
