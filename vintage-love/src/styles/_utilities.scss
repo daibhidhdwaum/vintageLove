@@ -3,11 +3,13 @@ $secondary: #fedd00;
 $tertiary: #f49627;
 $quarternary: #51ead5;
 $quiternary: #196f0c;
+$reqBackgroundColor: #6fcb9f;
 $dark: #27262c;
 $light: #fdfffc;
 
-$titles: "Fontdiner Swanky", cursive;
-$bodyText: "Raleway", sans-serif;
+$logo: "Fontdiner Swanky", cursive;
+$titles: "Cherry Cream Soda", cursive;
+$bodyText: "Prompt", sans-serif;
 
 @mixin text($font, $size) {
   font-family: $font;

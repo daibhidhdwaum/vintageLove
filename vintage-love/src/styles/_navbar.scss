@@ -13,7 +13,7 @@
     margin: 0 auto;
   }
   h1 {
-    @include text($titles, 2rem);
+    @include text($logo, 2rem);
   }
   &__line {
     width: 3rem;
