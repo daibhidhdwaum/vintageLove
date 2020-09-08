@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import "./App.scss";
-import pinup from "./assets/lady.jpg";
+// import pinup from "./assets/lady.jpg";
 import logo from "./assets/logo.jpg";
 import pinupRecline from "./assets/ladyRecline.jpg";
 import bike from "./assets/products/bike.jpg";
@@ -22,9 +22,9 @@ class Hamburger extends Component {
     return (
       <button type="button">
         <ul className="navbar__burger">
-          <li class="navbar__line"></li>
-          <li class="navbar__line"></li>
-          <li class="navbar__line"></li>
+          <li className="navbar__line"></li>
+          <li className="navbar__line"></li>
+          <li className="navbar__line"></li>
         </ul>
       </button>
     );
@@ -84,51 +84,129 @@ class Welcome extends Component {
 }
 
 const Card = (props) => {
-  console.log(props);
-  return (
-    <div className="card">
-      <div className="card__imageContainer">
-        <img src="" alt="switchplate" />
-        <div class="galleryHover">
-          <div class="imageInfoContainer">
-            <div class="imageInfo">
-              <h3>switchplate name</h3>
-              <p>switchplate description</p>
+  const product = props.image.map((prod) => {
+    return (
+      <div className="card" key={prod.id}>
+        <div className="card__imageContainer">
+          <img src={prod.src} alt={prod.title} />
+          <div className="galleryHover">
+            <div className="imageInfoContainer">
+              <div className="imageInfo">
+                <h3>{prod.title}</h3>
+                <p>{prod.description}</p>
+                <p>{prod.price}</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  );
+    );
+  });
+
+  return product;
 };
 
 class Gallery extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      images: [
-        { title: "bike", price: 50, src: { bike } },
-        { title: "bike", price: 50, src: { bike } },
-        { title: "bike", price: 50, src: { bike } },
-        { title: "bike", price: 50, src: { bike } },
-        { title: "bike", price: 50, src: { bike } },
-        { title: "bike", price: 50, src: { bike } },
-        { title: "bike", price: 50, src: { bike } },
-        { title: "bike", price: 50, src: { bike } },
-        { title: "bike", price: 50, src: { bike } },
-        { title: "bike", price: 50, src: { bike } },
-        { title: "bike", price: 50, src: { bike } },
-        { title: "bike", price: 50, src: { bike } },
-      ],
-    };
-  }
+  state = {
+    images: [
+      {
+        id: 1,
+        title: "bike",
+        price: 50,
+        src: { bike },
+        description: "Biodiesel truffaut hell of XOXO readymade bicycle rights",
+      },
+      {
+        id: 2,
+        title: "bike",
+        price: 50,
+        src: { bike },
+        description: "Biodiesel truffaut hell of XOXO readymade bicycle rights",
+      },
+      {
+        id: 3,
+        title: "bike",
+        price: 50,
+        src: { bike },
+        description: "Biodiesel truffaut hell of XOXO readymade bicycle rights",
+      },
+      {
+        id: 4,
+        title: "bike",
+        price: 50,
+        src: { bike },
+        description: "Biodiesel truffaut hell of XOXO readymade bicycle rights",
+      },
+      {
+        id: 5,
+        title: "bike",
+        price: 50,
+        src: { bike },
+        description: "Biodiesel truffaut hell of XOXO readymade bicycle rights",
+      },
+      {
+        id: 6,
+        title: "bike",
+        price: 50,
+        src: { bike },
+        description: "Biodiesel truffaut hell of XOXO readymade bicycle rights",
+      },
+      {
+        id: 7,
+        title: "bike",
+        price: 50,
+        src: { bike },
+        description: "Biodiesel truffaut hell of XOXO readymade bicycle rights",
+      },
+      {
+        id: 8,
+        title: "bike",
+        price: 50,
+        src: { bike },
+        description: "Biodiesel truffaut hell of XOXO readymade bicycle rights",
+      },
+      {
+        id: 9,
+        title: "bike",
+        price: 50,
+        src: { bike },
+        description: "Biodiesel truffaut hell of XOXO readymade bicycle rights",
+      },
+      {
+        id: 10,
+        title: "bike",
+        price: 50,
+        src: { bike },
+        description: "Biodiesel truffaut hell of XOXO readymade bicycle rights",
+      },
+      {
+        id: 11,
+        title: "bike",
+        price: 50,
+        src: { bike },
+        description: "Biodiesel truffaut hell of XOXO readymade bicycle rights",
+      },
+      {
+        id: 12,
+        title: "bike",
+        price: 50,
+        src: { bike },
+        description: "Biodiesel truffaut hell of XOXO readymade bicycle rights",
+      },
+    ],
+  };
 
   render() {
-    console.log(this.state);
     return (
       <section className="gallery">
-        <h2>Products</h2>
-        <Card />
+        <div className="gallery__wrapper">
+          <div className="gallery__content">
+            <h2 className="gallery__title">Products</h2>
+            <div className="gallery__grid">
+              <Card image={this.state.images} />
+            </div>
+          </div>
+        </div>
       </section>
     );
   }
@@ -139,7 +217,7 @@ class Stores extends Component {
     return (
       <div className="store">
         <div className="store__info">
-          <a href="">
+          <a href="https://www.blackstarstudios.ca/">
             <p>Black Star Studios</p>
           </a>
           <p>Invermere</p>
@@ -159,7 +237,7 @@ class Purchase extends Component {
           <h2 className="purchase__title">Where</h2>
         </div>
         <div className="purchase__etsy">
-          <a href="">
+          <a href="https://www.etsy.com/ca/shop/vintagelovely">
             <p>Etsy</p>
           </a>
         </div>
@@ -204,17 +282,17 @@ class Footer extends Component {
           <ul className="footer__social">
             <li>
               <a href="https://www.etsy.com/ca/shop/vintagelovely">
-                <i class="fab fa-etsy"></i>
+                <i className="fab fa-etsy"></i>
               </a>
             </li>
             <li>
               <a href="https://www.facebook.com/vintagelove.ca/?__xts__[%2Ffacebook]">
-                <i class="fab fa-facebook-f"></i>
+                <i className="fab fa-facebook-f"></i>
               </a>
             </li>
             <li>
               <a href="https://www.instagram.com/vintagelove.ca/?hl=en">
-                <i class="fab fa-instagram"></i>
+                <i className="fab fa-instagram"></i>
               </a>
             </li>
           </ul>
