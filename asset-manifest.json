@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/vintageLoveReact/static/css/main.6213e845.chunk.css",
+    "main.js": "/vintageLoveReact/static/js/main.fe1629ec.chunk.js",
+    "main.js.map": "/vintageLoveReact/static/js/main.fe1629ec.chunk.js.map",
+    "runtime-main.js": "/vintageLoveReact/static/js/runtime-main.ffc817af.js",
+    "runtime-main.js.map": "/vintageLoveReact/static/js/runtime-main.ffc817af.js.map",
+    "static/js/2.5b88443d.chunk.js": "/vintageLoveReact/static/js/2.5b88443d.chunk.js",
+    "static/js/2.5b88443d.chunk.js.map": "/vintageLoveReact/static/js/2.5b88443d.chunk.js.map",
+    "index.html": "/vintageLoveReact/index.html",
+    "precache-manifest.6a910571121c51fc14f7cfa6c5a42801.js": "/vintageLoveReact/precache-manifest.6a910571121c51fc14f7cfa6c5a42801.js",
+    "service-worker.js": "/vintageLoveReact/service-worker.js",
+    "static/css/main.6213e845.chunk.css.map": "/vintageLoveReact/static/css/main.6213e845.chunk.css.map",
+    "static/js/2.5b88443d.chunk.js.LICENSE.txt": "/vintageLoveReact/static/js/2.5b88443d.chunk.js.LICENSE.txt",
+    "static/media/bubble.png": "/vintageLoveReact/static/media/bubble.35ff2b8a.png",
+    "static/media/logo.png": "/vintageLoveReact/static/media/logo.a2e7aafa.png",
+    "static/media/pinupRecline.png": "/vintageLoveReact/static/media/pinupRecline.d776db1b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ffc817af.js",
+    "static/js/2.5b88443d.chunk.js",
+    "static/css/main.6213e845.chunk.css",
+    "static/js/main.fe1629ec.chunk.js"
+  ]
+}
