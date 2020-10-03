@@ -1,22 +1,29 @@
 .footer {
   background-color: $dark;
+  padding-top: 4rem;
+  display: flex;
+  a,
+  &__ownership {
+    color: $light;
+  }
   &__wrapper {
     max-width: 1100px;
     width: 90%;
     margin: 0 auto;
   }
-  p,
-  a {
-    @include text($bodyText, 1.6rem);
-    color: $light;
-  }
-  &__social {
+  &__info {
     display: flex;
-    justify-content: center;
-    i {
-      font-size: 2.5rem;
-      padding: 1.5rem;
-    }
+    justify-content: space-around;
+    align-items: center;
+    height: 25rem;
+    width: 100%;
+    // border: 1px solid red;
+  }
+  &__main {
+    display: flex;
+    flex-direction: column;
+    // margin: 5rem 0;
+    // border: 1px solid darkorange;
   }
   &__ownership {
     display: flex;
@@ -24,5 +31,27 @@
     align-items: center;
     justify-content: center;
     height: 6rem;
+    @include text($bodyText, 1.6rem);
+  }
+  &__contact {
+    padding: 5rem 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    &__contact {
+      width: 50%;
+      padding: 0;
+    }
+    &__main {
+      flex-direction: row;
+      padding-bottom: 5rem;
+    }
+    &__info {
+      // flex-direction: column;
+      // align-items: flex-start;
+      width: 50%;
+    }
   }
 }

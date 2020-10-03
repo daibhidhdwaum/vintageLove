@@ -1,0 +1,88 @@
+let images = [
+  {
+    id: 1,
+    title: "Bike",
+    price: 50,
+    src: "./images/bike.png",
+    description: "Biodiesel truffaut hell of XOXO readymade bicycle rights",
+  },
+  {
+    id: 2,
+    title: "'59 Ford Galaxie",
+    price: 50,
+    src: "./images/fordGalaxie.png",
+    description: "Biodiesel truffaut hell of XOXO readymade bicycle rights",
+  },
+  {
+    id: 3,
+    title: "Caught (lady in shower)",
+    price: 50,
+    src: "images/caught.png",
+    description: "Biodiesel truffaut hell of XOXO readymade bicycle rights",
+  },
+  {
+    id: 4,
+    title: "Sailors",
+    price: 50,
+    src: "images/sailors.png",
+    description: "Biodiesel truffaut hell of XOXO readymade bicycle rights",
+  },
+  {
+    id: 5,
+    title: "bike",
+    price: 50,
+    src: "images/bike.png",
+    description: "Biodiesel truffaut hell of XOXO readymade bicycle rights",
+  },
+  {
+    id: 6,
+    title: "Bust Ad",
+    price: 50,
+    src: "images/bustAd.png",
+    description: "Biodiesel truffaut hell of XOXO readymade bicycle rights",
+  },
+  {
+    id: 7,
+    title: "bike",
+    price: 50,
+    src: "images/bike.png",
+    description: "Biodiesel truffaut hell of XOXO readymade bicycle rights",
+  },
+  {
+    id: 8,
+    title: "Home Sweet Home",
+    price: 50,
+    src: "images/homeSweetHome.png",
+    description: "Biodiesel truffaut hell of XOXO readymade bicycle rights",
+  },
+  {
+    id: 9,
+    title: "bike",
+    price: 50,
+    src: "images/bike.png",
+    description: "Biodiesel truffaut hell of XOXO readymade bicycle rights",
+  },
+  {
+    id: 10,
+    title: "bike",
+    price: 50,
+    src: "images/bike.png",
+    description: "Biodiesel truffaut hell of XOXO readymade bicycle rights",
+  },
+  {
+    id: 11,
+    title: "bike",
+    price: 50,
+    src: "images/bike.png",
+    description: "Biodiesel truffaut hell of XOXO readymade bicycle rights",
+  },
+  {
+    id: 12,
+    title: "bike",
+    price: 50,
+    src: "images/bike.png",
+    description: "Biodiesel truffaut hell of XOXO readymade bicycle rights",
+  },
+];
+
+export default images;

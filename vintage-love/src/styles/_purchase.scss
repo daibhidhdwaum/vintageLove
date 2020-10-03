@@ -1,0 +1,21 @@
+.purchase,
+.purchase__etsy a {
+  color: $light;
+}
+
+.purchase {
+  &__title {
+    padding: 2rem 0;
+  }
+  &__etsy {
+    padding: 0 0 2rem;
+  }
+  &__title,
+  &__etsy,
+  &__etsy a {
+    @include text($bodyText, 2rem);
+  }
+  &__link {
+    margin: 0.5rem 0;
+  }
+}
