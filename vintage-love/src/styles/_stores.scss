@@ -1,0 +1,10 @@
+.store {
+  @include text($bodyText, 2rem);
+  color: $light;
+  &__info a {
+    color: $light;
+  }
+  &__availableAt {
+    margin: 0.5rem 0;
+  }
+}

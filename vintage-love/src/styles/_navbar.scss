@@ -7,13 +7,20 @@
 .navbar {
   background-color: $primary;
   font-size: 2rem;
+  font-family: $bodyText;
+  height: 9.5vh;
+  align-items: center;
+  // this is to make it sticky
+  position: sticky;
+  top: 0;
+  z-index: 30;
   &__wrapper {
     max-width: 1100px;
     width: 90%;
     margin: 0 auto;
   }
-  h1 {
-    @include text($logo, 2rem);
+  &__vlInfo {
+    width: 14rem;
   }
   &__line {
     width: 3rem;
@@ -23,7 +30,6 @@
     border-radius: 1.5rem;
   }
   &__container {
-    height: 8vh;
     justify-content: space-between;
   }
   button {
@@ -60,5 +66,20 @@
     height: 4rem;
     width: 100%;
     color: $dark;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    &__button {
+      display: none;
+    }
+    &__nav {
+      position: static;
+      background-color: transparent;
+      flex-direction: row;
+      width: 70%;
+      transform: none;
+    }
   }
 }

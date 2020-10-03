@@ -1,0 +1,13 @@
+.button {
+  // background-color: $reqBackgroundColor;
+  background-color: $silver;
+
+  height: 4rem;
+  width: 15rem;
+  border: none;
+  border-radius: 1rem;
+  @include text($bodyText, 2rem);
+  color: $dark;
+  margin: 1rem 0;
+  text-transform: uppercase;
+}

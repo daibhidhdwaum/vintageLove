@@ -1,0 +1,19 @@
+.header {
+  height: 29.5vh;
+  // this is for the hidden scroll
+  position: relative;
+  z-index: 20;
+  &__background {
+    background-image: url("/images/ginghamCrop.png");
+    background-position: left;
+    background-size: contain;
+    background-color: $bodyText;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__logoContainer {
+    max-width: 65rem;
+  }
+}

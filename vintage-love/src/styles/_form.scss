@@ -1,0 +1,66 @@
+.form {
+  max-width: 55rem;
+
+  &__contentContainer {
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: $primary;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "yourName"
+      "email"
+      "message"
+      "button";
+  }
+  &__nameContainer {
+    grid-area: yourName;
+  }
+  &__emailContainer {
+    grid-area: email;
+  }
+  &__messageContainer {
+    grid-area: message;
+  }
+  &__button {
+    grid-area: button;
+  }
+  &__label {
+    @include text($bodyText, 2rem);
+    display: inline-block;
+    padding: 0.5rem 0;
+  }
+  &__input {
+    height: 3rem;
+  }
+  &__textarea {
+    height: 8rem;
+    resize: none;
+  }
+  &__input,
+  &__textarea {
+    width: 100%;
+    border-radius: 0.5rem;
+    border: none;
+    padding: 0.5rem;
+    @include text($bodyText, 2rem);
+  }
+}
+
+@media (min-width: 768px) {
+  .form {
+    &__contentContainer {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "yourName email"
+        "message message"
+        "button .";
+    }
+    &__nameContainer {
+      margin-right: 1rem;
+    }
+    &__emailContainer {
+      margin-left: 1rem;
+    }
+  }
+}

@@ -1,18 +1,12 @@
 .gallery {
-  background-image: url(../assets/lighttray.jpg);
-  // background-color: $light;
-
+  background-color: $silver;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   padding: 2rem 0;
-  &__wrapper {
-    max-width: 1100px;
-    width: 90%;
-    margin: 0 auto;
-  }
+
   &__content {
-    // background-image: url(../assets/lighttray.jpg);
-    // background-color: $tertiary;
     background-color: transparent;
-    // background-color: $light;
     padding: 1rem;
     border-radius: 1.5rem;
   }
@@ -24,5 +18,18 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .gallery {
+    &__wrapper {
+      max-width: 1100px;
+      width: 90%;
+      margin: 0 auto;
+    }
+    &__grid {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
   }
 }
