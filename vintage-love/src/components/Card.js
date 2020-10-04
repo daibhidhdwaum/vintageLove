@@ -3,8 +3,11 @@ import React, { useState } from "react";
 const Card = (props) => {
   const [hover, setHover] = useState(false);
 
+  console.log(props);
+
   const product = props.image.map((prod, i) => {
     // const [hover, setHover] = useState(false);
+    console.log(prod.src);
     const handleMouseEnter = (e) => {
       setHover(true);
     };

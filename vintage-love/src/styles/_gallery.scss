@@ -1,12 +1,8 @@
 .gallery {
-  background-color: $silver;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-color: $newSilver;
   padding: 2rem 0;
-
   &__content {
-    background-color: transparent;
+    // background-color: transparent;
     padding: 1rem;
     border-radius: 1.5rem;
   }

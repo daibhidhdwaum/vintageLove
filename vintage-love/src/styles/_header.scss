@@ -4,10 +4,10 @@
   position: relative;
   z-index: 20;
   &__background {
-    background-image: url("/images/ginghamCrop.png");
+    background-image: url("../assets/gingham.png");
     background-position: left;
     background-size: contain;
-    background-color: $bodyText;
+    background-color: $light;
     height: 30vh;
     display: flex;
     justify-content: center;
