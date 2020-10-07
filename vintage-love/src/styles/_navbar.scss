@@ -1,4 +1,4 @@
-.navbar,
+.navbar__blanket,
 .navbar__container,
 .navbar__nav {
   display: flex;
@@ -8,12 +8,18 @@
   background-color: $primary;
   font-size: 2rem;
   font-family: $bodyText;
-  height: 9.5vh;
   align-items: center;
-  // this is to make it sticky
   position: sticky;
   top: 0;
+  transform-style: preserve-3d;
   z-index: 30;
+  &__blanket {
+    width: 100%;
+    background-color: $primary;
+
+    height: 10vh;
+    align-items: center;
+  }
   &__wrapper {
     max-width: 1100px;
     width: 90%;
@@ -37,7 +43,6 @@
     background-color: transparent;
   }
   &__burger {
-    border: 1px solid $dark;
     padding: 0.8rem;
     &:hover {
       cursor: pointer;
@@ -52,10 +57,19 @@
     background-color: $light;
     width: 100%;
     position: absolute;
-    top: 21.7vh;
+    bottom: 0;
     left: 0;
     flex-direction: column;
-    transform: translateX(100%);
+    transform: translateZ(-10px);
+    z-index: -1;
+  }
+  &__navHidden {
+    transform: translateY(-100%);
+    transition: ease-in 0.7s;
+  }
+  &__navVisible {
+    transform: translateY(100%);
+    transition: ease-in 0.7s;
   }
   &__nav li {
     width: 100%;
@@ -67,12 +81,18 @@
     width: 100%;
     color: $dark;
   }
+  &__nav li a:hover {
+    cursor: pointer;
+  }
 }
 
 @media (min-width: 768px) {
   .navbar {
     &__button {
       display: none;
+    }
+    &__blanket {
+      background-color: transparent;
     }
     &__nav {
       position: static;

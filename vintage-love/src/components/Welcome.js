@@ -4,7 +4,7 @@ import bubble from "../assets/bubble.png";
 
 const Welcome = () => {
   return (
-    <section className="welcome">
+    <section className="welcome" id="who">
       <div className="welcome__wrapper">
         <div className="welcome__imagesContainer">
           <div className="welcome__imageContainer--pinup">

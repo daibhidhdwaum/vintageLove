@@ -3,7 +3,7 @@ import Stores from "./Stores";
 
 const Purchase = () => {
   return (
-    <section className="purchase">
+    <section className="purchase" id="where">
       <div className="purchase__container">
         <p className="purchase__title">Where to find vintagelove</p>
         <div className="purchase__etsy">

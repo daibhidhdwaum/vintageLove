@@ -1,29 +1,30 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 
 const Card = (props) => {
   const [hover, setHover] = useState(false);
 
-  console.log(props);
+  const ref = useRef();
+  const handleMouseEnter = (e, id) => {
+    console.log(e.target.id);
+    e.target = setHover(true);
+  };
+
+  const handleMouseLeave = () => {
+    setHover(false);
+  };
 
   const product = props.image.map((prod, i) => {
-    // const [hover, setHover] = useState(false);
-    console.log(prod.src);
-    const handleMouseEnter = (e) => {
-      setHover(true);
-    };
-
-    const handleMouseLeave = () => {
-      setHover(false);
-    };
-
     return (
       <div className="card" key={prod.id}>
-        <div
-          className="card__imageContainer"
-          onMouseEnter={(i) => handleMouseEnter(i)}
-          onMouseOut={handleMouseLeave}
-        >
-          <img src={prod.src} alt={prod.title} />
+        <div className="card__imageContainer">
+          <img
+            src={prod.src}
+            alt={prod.title}
+            id={i}
+            ref={ref}
+            onMouseEnter={handleMouseEnter}
+            onMouseOut={handleMouseLeave}
+          />
         </div>
         <div
           className={`card__hoveredDisplayLayout ${

@@ -1,0 +1,60 @@
+.wrapper {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+html {
+  font-size: 63.5%;
+}
+
+body {
+  background-color: floralwhite;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.pinup {
+  max-width: 35rem;
+  margin: 2rem 0;
+}
+
+.content {
+  height: calc(100vh - 4rem);
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1,
+p {
+  margin: 0;
+  padding: 0.5rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+.visuallyHidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.logo {
+  max-width: 25rem;
+}
+
+a:active,
+a:visited {
+  color: #ed2025;
+}
