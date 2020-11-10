@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/vintageLoveReact/static/css/main.6213e845.chunk.css",
-    "main.js": "/vintageLoveReact/static/js/main.fe1629ec.chunk.js",
-    "main.js.map": "/vintageLoveReact/static/js/main.fe1629ec.chunk.js.map",
+    "main.css": "/vintageLoveReact/static/css/main.e650fb6a.chunk.css",
+    "main.js": "/vintageLoveReact/static/js/main.fc1ef4c1.chunk.js",
+    "main.js.map": "/vintageLoveReact/static/js/main.fc1ef4c1.chunk.js.map",
     "runtime-main.js": "/vintageLoveReact/static/js/runtime-main.ffc817af.js",
     "runtime-main.js.map": "/vintageLoveReact/static/js/runtime-main.ffc817af.js.map",
-    "static/js/2.5b88443d.chunk.js": "/vintageLoveReact/static/js/2.5b88443d.chunk.js",
-    "static/js/2.5b88443d.chunk.js.map": "/vintageLoveReact/static/js/2.5b88443d.chunk.js.map",
+    "static/js/2.6dab5302.chunk.js": "/vintageLoveReact/static/js/2.6dab5302.chunk.js",
+    "static/js/2.6dab5302.chunk.js.map": "/vintageLoveReact/static/js/2.6dab5302.chunk.js.map",
     "index.html": "/vintageLoveReact/index.html",
-    "precache-manifest.6a910571121c51fc14f7cfa6c5a42801.js": "/vintageLoveReact/precache-manifest.6a910571121c51fc14f7cfa6c5a42801.js",
+    "precache-manifest.c9ec450b83b0521ad8d017d48129d195.js": "/vintageLoveReact/precache-manifest.c9ec450b83b0521ad8d017d48129d195.js",
     "service-worker.js": "/vintageLoveReact/service-worker.js",
-    "static/css/main.6213e845.chunk.css.map": "/vintageLoveReact/static/css/main.6213e845.chunk.css.map",
-    "static/js/2.5b88443d.chunk.js.LICENSE.txt": "/vintageLoveReact/static/js/2.5b88443d.chunk.js.LICENSE.txt",
+    "static/css/main.e650fb6a.chunk.css.map": "/vintageLoveReact/static/css/main.e650fb6a.chunk.css.map",
+    "static/js/2.6dab5302.chunk.js.LICENSE.txt": "/vintageLoveReact/static/js/2.6dab5302.chunk.js.LICENSE.txt",
     "static/media/bubble.png": "/vintageLoveReact/static/media/bubble.35ff2b8a.png",
+    "static/media/App.scss": "/vintageLoveReact/static/media/gingham.c0be7868.png",
     "static/media/logo.png": "/vintageLoveReact/static/media/logo.a2e7aafa.png",
-    "static/media/pinupRecline.png": "/vintageLoveReact/static/media/pinupRecline.d776db1b.png"
+    "static/media/pinupRecline.png": "/vintageLoveReact/static/media/pinupRecline.b3c1766c.png"
   },
   "entrypoints": [
     "static/js/runtime-main.ffc817af.js",
-    "static/js/2.5b88443d.chunk.js",
-    "static/css/main.6213e845.chunk.css",
-    "static/js/main.fe1629ec.chunk.js"
+    "static/js/2.6dab5302.chunk.js",
+    "static/css/main.e650fb6a.chunk.css",
+    "static/js/main.fc1ef4c1.chunk.js"
   ]
 }
