@@ -45,6 +45,10 @@
     padding: 0.5rem;
     @include text($bodyText, 2rem);
   }
+  &__message {
+    @include text($bodyText, 2rem);
+    margin: 2rem 0;
+  }
 }
 
 @media (min-width: 768px) {

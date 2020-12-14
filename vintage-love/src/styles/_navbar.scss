@@ -11,12 +11,10 @@
   align-items: center;
   position: sticky;
   top: 0;
-  transform-style: preserve-3d;
   z-index: 30;
   &__blanket {
     width: 100%;
     background-color: $primary;
-
     height: 10vh;
     align-items: center;
   }
@@ -54,13 +52,12 @@
     align-items: center;
   }
   &__nav {
-    background-color: $light;
+    background-color: $quinternary;
     width: 100%;
     position: absolute;
     bottom: 0;
     left: 0;
     flex-direction: column;
-    transform: translateZ(-10px);
     z-index: -1;
   }
   &__navHidden {
@@ -100,6 +97,7 @@
       flex-direction: row;
       width: 70%;
       transform: none;
+      z-index: 0;
     }
   }
 }

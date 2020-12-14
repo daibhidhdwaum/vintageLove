@@ -17,7 +17,8 @@ const Navbar = () => {
     setHamburgerClicked(false);
   };
 
-  const onLinkClick = () => {
+  const onLinkClick = (e) => {
+    console.log(e.target);
     setHamburgerClicked(false);
   };
 
@@ -46,7 +47,7 @@ const Navbar = () => {
                     duration={700}
                     className="navbar__link"
                     offset={-50}
-                    onClick={onLinkClick}
+                    onClick={(e) => onLinkClick(e)}
                   >
                     Who
                   </Link>

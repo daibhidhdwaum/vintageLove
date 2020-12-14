@@ -1,0 +1,32 @@
+.info {
+  border: 1px solid $tertiary;
+  padding: 2.5rem;
+  background-color: $quarternary;
+  border-radius: 0.4rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 0.5rem solid white;
+  &__title {
+    @include text($bodyText, 3rem);
+    margin: 0 0 2rem 0;
+  }
+  &__content {
+    @include text($bodyText, 2.5rem);
+    line-height: 3.5rem;
+  }
+}
+
+@media (min-width: 560px) {
+  .info {
+    width: calc(50% - 4rem);
+    // margin: 1rem auto 0;
+  }
+}
+
+@media (min-width: 1000px) {
+  .info {
+    padding: 5rem;
+  }
+}

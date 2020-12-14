@@ -4,44 +4,30 @@
   z-index: 0;
   &__wrapper {
     max-width: 1100px;
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
   }
-  &__imagesContainer {
+  &__container {
     display: flex;
-    position: relative;
-    height: 60.5vh;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 0;
+    margin: 0 auto;
   }
-  &__imageContainer--pinup {
-    margin-top: 8rem;
-    bottom: 0;
-    position: absolute;
-    max-width: 50rem;
-    width: 100%;
-  }
-  &__imageContainer--bubble {
-    min-width: 20rem;
-    max-width: 40rem;
-    position: absolute;
-    // left: 20rem;
-  }
-  &__slogan {
-    @include text($logo, 1.8rem);
-    position: absolute;
-    // top: 9.5rem;
-    top: 7.5rem;
-    left: 4rem;
+  &__imageContainer {
+    border: 1rem solid white;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 560px) {
   .welcome {
-    &__imageContainer--bubble {
-      left: 20rem;
+    &__container {
+      flex-direction: row;
     }
-    &__slogan {
-      top: 9.5rem;
-      left: 9rem;
+    &__imageContainer {
+      width: 50%;
+      max-width: 42rem;
     }
   }
 }

@@ -1,8 +1,8 @@
 .store {
   @include text($bodyText, 2rem);
-  color: $light;
+  color: $quinternary;
   &__info a {
-    color: $light;
+    color: $quinternary;
   }
   &__availableAt {
     margin: 0.5rem 0;
