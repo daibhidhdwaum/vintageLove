@@ -1,6 +1,6 @@
 import React from "react";
-import pinupRecline from "../assets/pinupRecline.png";
-import bubble from "../assets/bubble.png";
+// import pinupRecline from "../assets/pinupRecline.png";
+// import bubble from "../assets/bubble.png";
 import lady from "../assets/lady.jpg";
 import Info from "./Info";
 

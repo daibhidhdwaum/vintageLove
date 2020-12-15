@@ -17,13 +17,10 @@
     align-items: center;
     height: 25rem;
     width: 100%;
-    // border: 1px solid red;
   }
   &__main {
     display: flex;
     flex-direction: column;
-    // margin: 5rem 0;
-    // border: 1px solid darkorange;
   }
   &__ownership {
     display: flex;
@@ -32,6 +29,9 @@
     justify-content: center;
     height: 6rem;
     @include text($bodyText, 1.6rem);
+  }
+  &__build {
+    padding: 1rem 0;
   }
   &__contact {
     padding: 5rem 0;
@@ -49,8 +49,6 @@
       padding-bottom: 5rem;
     }
     &__info {
-      // flex-direction: column;
-      // align-items: flex-start;
       width: 50%;
     }
   }

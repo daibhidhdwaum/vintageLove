@@ -1,5 +1,4 @@
-import React, { Component, Fragment } from "react";
-import Modal from "react-modal";
+import React, { Fragment } from "react";
 
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
@@ -8,8 +7,6 @@ import Gallery from "./components/Gallery";
 import Footer from "./components/Footer";
 
 import "./App.scss";
-
-Modal.setAppElement("#root");
 
 const App = () => {
   return (

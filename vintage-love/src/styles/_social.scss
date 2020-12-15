@@ -10,6 +10,10 @@
     font-size: 2rem;
     padding: 2rem;
   }
+  i:hover,
+  i:focus {
+    cursor: pointer;
+  }
 }
 
 @media (min-width: 768px) {

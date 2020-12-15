@@ -78,8 +78,12 @@
     width: 100%;
     color: $dark;
   }
-  &__nav li a:hover {
+  &__nav li a:hover,
+  &__nav li a:focus-within {
     cursor: pointer;
+  }
+  &__nav li a:focus-within {
+    border: 1px solid $quinternary;
   }
 }
 
